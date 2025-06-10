@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="website icon" type="png" href="./public/images/portfolio-website-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts:- Inter, JetBrains Mono, Playfair Display, Quicksand, Raleway, Titillium Web -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="https://kit.fontawesome.com/9ac68976e2.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="preloadResources()">
+    <!-- <div id="preloader">Loading assets....</div> -->
+
+    <nav id="nav" class="navbar" data-animation="diagonal">
+        <h1 onclick="reload()">My Portfolio</h1>
+        <div class="links">
+            <a class="nav-links" href="#">Home
+                <span class="border border-top"></span>
+                <span class="border border-right"></span>
+                <span class="border border-bottom"></span>
+                <span class="border border-left"></span>
+            </a>
+            <a class="nav-links" href="#aboutme">About
+                <span class="border border-top"></span>
+                <span class="border border-right"></span>
+                <span class="border border-bottom"></span>
+                <span class="border border-left"></span>
+            </a>
+            <!-- <a class="nav-links" href="#skills">Skills
+                <span class="border border-top"></span>
+                <span class="border border-right"></span>
+                <span class="border border-bottom"></span>
+                <span class="border border-left"></span>
+            </a> -->
+            <a class="nav-links" href="#projects">Projects
+                <span class="border border-top"></span>
+                <span class="border border-right"></span>
+                <span class="border border-bottom"></span>
+                <span class="border border-left"></span>
+            </a>
+            <a class="nav-links" href="#contact">Contact Me
+                <span class="border border-top"></span>
+                <span class="border border-right"></span>
+                <span class="border border-bottom"></span>
+                <span class="border border-left"></span>
+            </a>
+        </div>
+    </nav>
+    <!-------------Home Section----------->
+    <div id="home" class="body">
+        <div class="body-content">
+            <h2>Hi! I am,</h2>
+            <h1>Chaitanya Raj</h1>
+            <div class="typetext">
+                <h3>Web Developer</h3>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/raj_chaitanya_/" target="_blank"><img
+                        src="./public/images/media handles/instagram color.png" /></a>
+                <a href="https://www.linkedin.com/in/rajchaitanya/" target="_blank"><img
+                        src="./public/images/media handles/linkedin color.png" alt=""></a>
+                <a href="https://github.com/chaitanyaraj75" target="_blank"><img
+                        src="./public/images/media handles/github.png" alt=""></a>
+                <!-- <a href="#"></a> -->
+            </div>
+            <div class="resume-button">
+                <a href="./public/files/Chaitanya Raj Resume.pdf" class="resume" download="Chaitanya's resume">Download
+                    Resume</a>
+            </div>
+        </div>
+        <div class="body-image">
+            <model-viewer class="animatedimg" src="./public/images/Adventurous_Boy_Anima_0601151217_texture.glb"
+                alt="A 3D model" auto-rotate camera-controls camera-orbit="45deg 75deg 6m">
+            </model-viewer>
+        </div>
+    </div>
+    <!------------About Section ----------->
+    <div id="aboutme" class="about">
+        <div class="about-image">
+            <img id="image" src="./public/images/display/close shot.jpg" alt="">
+            <!-- <img id="image2" src="https://picsum.photos/id/453/375/500" alt=""> -->
+            <button class="nav-button nav-left" id="prevBtn">&#10094;</button>
+            <button class="nav-button nav-right" id="nextBtn">&#10095;</button>
+        </div>
+        <div class="about-content">
+            <h1 class="head-h1"><u></u>About Me</h1>
+            <p class="about-text">
+                Hey, I'm Chaitanya Raj — A final-year CSE student at MMMUT and a full-stack web developer. I enjoy
+                building web apps that look great and work even better.
+
+                I work with technologies like React, Node.js, Express, and PostgreSQL to create full-stack projects from
+                scratch. Whether it's frontend design or backend logic, I love the process of turning ideas into real,
+                functional products.
+
+                I'm always up for learning something new, exploring tech trends, and taking on exciting development
+                challenges. Let's build something cool!
+
+
+            </p>
+            <div class="sections">
+                <p class="section-items active-item" onclick="opentab('skills', event)">Skills</p>
+                <p class="section-items" onclick="opentab('education',event)">Education</p>
+            </div>
+            <div class="section-content">
+                <div id="skills" class="tabs active-tab">
+                    <div class="eachskill">
+                        <img src="./public/images/Logos/html5-seeklogo.png" alt="Photoshop">
+                        <p>HTML</p>
+                    </div>
+                    <div class="eachskill">
+                        <img src="./public/images/Logos/css3-seeklogo.png" alt="Photoshop">
+                        <p>CSS</p>
+                    </div>
+                    <div class="eachskill">
+                        <img src="./public/images/Logos/javascript-seeklogo.png" alt="Photoshop">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="eachskill">
+                        <img src="./public/images/Logos/bootstrap-logo.png" alt="Photoshop">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="eachskill">
+                        <img src="./public/images/Logos/python-seeklogo.png" alt="Photoshop">
+                        <p>Python</p>
+                    </div>
+                    <div class="eachskill">
+                        <img src="./public/images/Logos/c-seeklogo.png" alt="Photoshop">
+                        <p>C++</p>
+                    </div>
+                    <div class="eachskill">
+                        <img src="./public/images/Logos/node-js-seeklogo.png" alt="Photoshop">
+                        <p>Node.js</p>
+                    </div>
+                    <div class="eachskill">
+                        <img src="./public/images/Logos/react-seeklogo.png" alt="Photoshop">
+                        <p>React</p>
+                    </div>
+                    <div class="eachskill">
+                        <img src="./public/images/Logos/postgre-sql-seeklogo.png" alt="Photoshop">
+                        <p>PostgreSQL</p>
+                    </div>
+                    <div class="eachskill">
+                        <img src="./public/images/Logos/postman-api-platform-seeklogo.png" alt="Photoshop">
+                        <p>Postman</p>
+                    </div>
+                    <div class="eachskill">
+                        <img src="./public/images/Logos/github-seeklogo.png" alt="Photoshop">
+                        <p>GitHub</p>
+                    </div>
+                    <div class="eachskill">
+                        <img src="./public/images/Logos/adobe-photoshop-seeklogo.png" alt="Photoshop">
+                        <p>Photoshop</p>
+                    </div>
+                    <div class="eachskill">
+                        <img src="./public/images/Logos/canva-seeklogo.png" alt="Photoshop">
+                        <p>Canva</p>
+                    </div>
+                    <!-- HTML,CSS,JS,PYTHON,C++,NODE,POSTGRESQL,REACT,POSTMAN,GITHUB PHOTOSHOP, CANVA -->
+                </div>
+                <div id="education" class="tabs">
+                    <ul>
+                        <li>
+                            <span class="edu-year">2022-2026</span><br>
+                            Btech in Computer Science and Engineering from MMMUT, Gorakhpur<br>
+                        </li>
+                        <li>
+                            <span class="edu-year">2020-2021</span><br>
+                            Intermediate from Trident Public School, Muzaffarpur<br>
+                        </li>
+                        <li>
+                            <span class="edu-year">2018-2019</span><br>
+                            High School from G D Mothers International School, Muzaffarpur<br>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project Section -->
+    <div id="projects" class="project">
+        <h1 class="head-h1">Projects</h1>
+        <div class="project-cards">
+            <div id="to-do-list" class="card">
+                <!-- <div class="card-image">
+                    <img src="./image/Project/to-do-list-cover.jpg" alt="Project 1">
+                </div> -->
+                <div class="card-heading">
+                    <h2>Multi User To-Do-List</h2>
+                </div>
+                <div class="card-description">
+                    <p>
+                        This project is a multi-user To-Do List, where multiple users can securely access
+                        their task lists using a unique user ID and password. It includes a login page,
+                        registration page, and a main page to display tasks. Users can log out anytime,
+                        and the system is protected from direct URL access to unauthorized pages
+                    </p>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/chaitanyaraj75/To-Do-List" target="_blank" class="code-button">GitHub
+                        Link</a>
+                    <!-- <button>Details</button> -->
+                </div>
+            </div>
+            <div id="tic-tak-toe" class="card">
+                <!-- <div class="card-image">
+                    <img src="./image/dummy.png" alt="Project 1">
+                </div> -->
+                <div class="card-heading">
+                    <h2>Tic-Tak-Toe</h2>
+                </div>
+                <div class="card-description">
+                    <p>
+                        A simple and interactive Tic-Tac-Toe (also known as Noughts
+                        and Crosses) game built using HTML, CSS, and JavaScript. This
+                        project demonstrates basic front-end web development skills
+                        and game logic implementation using vanilla JavaScript.
+                    </p>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/chaitanyaraj75/Tic-Tak-Toe" target="_blank" class="code-button">GitHub
+                        Link</a>
+                    <a href="https://chaitanyaraj75.github.io/Tic-Tak-Toe/" target="_blank"
+                        class="launch-button">Launch</a>
+                </div>
+            </div>
+            <div id="the-calculator" class="card">
+                <!-- <div class="card-image">
+                    <img src="./image/dummy.png" alt="Project 1">
+                </div> -->
+                <div class="card-heading">
+                    <h2>The Calculator</h2>
+                </div>
+                <div class="card-description">
+                    <p>
+                        A fully functional and responsive calculator built using HTML,
+                        CSS, and JavaScript. It can perform all the basic arithmetic
+                        operations including addition, subtraction, multiplication,
+                        division, modulo, and supports decimal numbers. Additional
+                        features include delete (backspace) and clear all
+                        functionalities.
+                    </p>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/chaitanyaraj75/The-calculator" target="_blank"
+                        class="code-button">GitHub Link</a>
+                    <a href="https://chaitanyaraj75.github.io/The-calculator/" target="_blank"
+                        class="launch-button">Launch</a>
+                </div>
+            </div>
+            <div id="simon-game" class="card">
+                <!-- <div class="card-image">
+                    <img src="./image/dummy.png" alt="Project 1">
+                </div> -->
+                <div class="card-heading">
+                    <h2>Simon Game</h2>
+                </div>
+                <div class="card-description">
+                    <p>
+                        A web-based implementation of the classic Simon Game using HTML,
+                        CSS, and JavaScript.Challenge your memory by repeating
+                        increasingly complex color sequences.
+                    </p>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/chaitanyaraj75/Simon-Game" target="_blank" class="code-button">GitHub
+                        Link</a>
+                    <a href="https://chaitanyaraj75.github.io/Simon-Game/" target="_blank"
+                        class="launch-button">Launch</a>
+                </div>
+            </div>
+            <div id="drum-kit" class="card">
+                <div class="card-heading">
+                    <h2>Drum Kit</h2>
+                </div>
+                <div class="card-description">
+                    <p>
+                        This is a simple interactive Drum Kit web app built using HTML, CSS, and
+                        JavaScript. It allows users to play different drum sounds by clicking on
+                        on-screen buttons or by pressing corresponding keys on the keyboard.
+                    </p>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/chaitanyaraj75/Drum-Kit" target="_blank" class="code-button">GitHub
+                        Link</a>
+                    <a href="https://chaitanyaraj75.github.io/Drum-Kit" target="_blank" class="launch-button">Launch</a>
+                </div>
+            </div>
+            <div id="dice-game" class="card">
+                <div class="card-heading">
+                    <h2>Dice Game</h2>
+                </div>
+                <div class="card-description">
+                    <p>
+                        A simple and fun browser-based game where both the user and the computer roll
+                        a virtual dice. Each participant gets a random number between 1 and 6.
+                        The player with the higher number wins the round. If both roll the same number,
+                        it's a tie and you get to roll again. This game is a
+                        quick way to test your luck and enjoy a classic dice challenge!
+                    </p>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/chaitanyaraj75/Dice-Game" target="_blank" class="code-button">GitHub
+                        Link</a>
+                    <a href="https://chaitanyaraj75.github.io/Dice-Game/" target="_blank"
+                        class="launch-button">Launch</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact" class="contact-me">
+        <h1 class="head-h1">Contact Me</h1>
+        <div class="contact-section">
+            <div class="contact-left">
+                <h2>Get in Touch</h2>
+                <!-- <p>If you have any questions, suggestions, or just want to say hello, feel free to reach out!</p> -->
+                <ul>
+                    <li><i class="fa-solid fa-paper-plane"></i> rajchaitanya75@gmail.com <a href="mailto:rajchaitanya75@gmail.com">
+                        </a>
+                    </li>
+                    <li><i class="fa-solid fa-phone"></i> +91 8709248401</li>
+                </ul>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/raj_chaitanya_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rajchaitanya/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/chaitanyaraj75"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" class="contact-form" action="">
+                    <input type="text" name="Name" placeholder="Enter your name" required>
+                    <input type="email" name="Email" placeholder="Enter your email-address" required>
+                    <textarea placeholder="Enter your message here...." name="Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!------------Footer--------------->
+    <footer>
+        <p id="footer">© 2025 Chaitanya Raj</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
