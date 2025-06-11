@@ -34,7 +34,7 @@ Welcome to my portfolio website! This site showcases my projects, skills, and ex
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/portfolio.git
+    git clone https://github.com/chaitanyaraj75/Portfolio.git
     ```
 2. **Navigate to the project directory:**
     ```bash
