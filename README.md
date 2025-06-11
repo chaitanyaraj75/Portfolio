@@ -5,6 +5,7 @@ Welcome to my portfolio website! This site showcases my projects, skills, and ex
 ## Features
 
 - **Project Showcase:** Displays my projects with descriptions, GitHub links, and live demos.
+- **Responsive:** Responsive for all type of screen.
 - **About Me Section:** Learn more about my background, skills, and education.
 - **Skills Tabs:** Interactive tabs to view my technical skills and education.
 - **Contact Form:** Easily get in touch with me via a built-in contact form.
@@ -33,7 +34,7 @@ Welcome to my portfolio website! This site showcases my projects, skills, and ex
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/portfolio.git
+    git clone https://github.com/chaitanyaraj75/Portfolio.git
     ```
 2. **Navigate to the project directory:**
     ```bash
@@ -82,7 +83,7 @@ portfolio/
 
 ## Live Demo
 
-[Add your live site link here, e.g., https://chaitanyaraj75.github.io/Portfolio/]
+[https://chaitanyaraj75.github.io/Portfolio/]
 
 ---
 
