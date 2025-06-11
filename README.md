@@ -83,7 +83,7 @@ portfolio/
 
 ## Live Demo
 
-[Add your live site link here, e.g., https://chaitanyaraj75.github.io/Portfolio/]
+[https://chaitanyaraj75.github.io/Portfolio/]
 
 ---
 
