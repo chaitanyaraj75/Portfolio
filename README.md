@@ -5,6 +5,7 @@ Welcome to my portfolio website! This site showcases my projects, skills, and ex
 ## Features
 
 - **Project Showcase:** Displays my projects with descriptions, GitHub links, and live demos.
+- **Responsive:** Responsive for all type of screen.
 - **About Me Section:** Learn more about my background, skills, and education.
 - **Skills Tabs:** Interactive tabs to view my technical skills and education.
 - **Contact Form:** Easily get in touch with me via a built-in contact form.
