@@ -686,6 +686,11 @@ html {
     background-size: cover;
 }
 
+#solar-system{
+    background-image: url("./public/images/Project/Solar-System.jpg");
+    background-size: cover;
+}
+
 #tic-tak-toe {
     background-image: url("./public/images/Project/tic-tak-toe.jpg");
     background-size: cover;
