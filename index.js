@@ -82,7 +82,7 @@ function preloadResources() {
             img.src = src;
             img.onload = resolve;
             img.onerror = resolve;
-            console.log(img);
+            // console.log(img);
         }));
     });
     // console.log(promises);
