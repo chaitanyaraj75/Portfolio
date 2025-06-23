@@ -618,6 +618,11 @@ html {
     margin-bottom: 10px;
 }
 
+.card-description a{
+    text-decoration: none;
+    color: #73d531;
+}
+
 
 .card-links {
     display: flex;
@@ -679,6 +684,11 @@ html {
 
 .launch-button:active {
     transform: translateY(4px) scale(1);
+}
+
+#funflix{
+    background-image: url("./public/images/Project/Funflix.jpg");
+    background-size: cover;
 }
 
 #to-do-list {
