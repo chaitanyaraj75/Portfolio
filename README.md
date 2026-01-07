@@ -83,7 +83,7 @@ portfolio/
 
 ## Live Demo
 
-[https://chaitanyaraj75.github.io/Portfolio/]
+https://chaitanyaraj75.github.io/Portfolio
 
 ---
 
