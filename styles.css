@@ -686,6 +686,11 @@ html {
     transform: translateY(4px) scale(1);
 }
 
+#hostel-management{
+    background-image: url("./public/images/Project/Hostel-Management.jpg");
+    background-size: cover;
+}
+
 #funflix{
     background-image: url("./public/images/Project/Funflix.jpg");
     background-size: cover;
