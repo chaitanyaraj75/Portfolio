@@ -1,6 +1,6 @@
 // alert("Hello, World!");
 function reload(){
-    alert("Page Reloaded");
+    // alert("Page Reloaded");
     window.location.reload();
 }
 // window.onbeforeunload = function () {
